@@ -1,3 +1,11 @@
+#' Add zero-value rows and columns to each edges of matrix
+#'
+#' This function return matrix with additional zero-value rows and columns on each edge
+#'
+#' @param input_data a two-dimension matrix that need to perform padding method on
+#' @param padding_value how many zero-value rows and columns are supposed to be added
+#' @return res the padding result
+
 padding = function(input_data, padding_value){
   if (length(padding_value)==1){
     p1 = padding_value

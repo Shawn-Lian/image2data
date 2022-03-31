@@ -1,3 +1,13 @@
+#' Compute the two-dimensional convolution
+#'
+#' This function return the result of two-dimensional convolution on the input data with input kernel
+#'
+#' @param input_data a two-dimension matrix that need to perform convolution method on
+#' @param use_kernel the kernel that used to compute the two-dimension convolution
+#' @param padding_value how many zero-value rows and columns are supposed to be added before computing, with default = 0
+#' @param stride the stride size to take when computing, with default = 1
+#' @return res the convolution result
+
 convolution = function(input_data,use_kernel,padding_value=0,stride = 1){
   h = dim(use_kernel)[1]
   w = dim(use_kernel)[2]
